@@ -8,28 +8,16 @@
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_grocerylistapp.xml.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\grocerylistapp.xml"
-    },
-    {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_info_output.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\info_output.xml"
     },
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -38,14 +26,6 @@
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_plus.png.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-xxhdpi\\plus.png"
-    },
-    {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_plus.png.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-hdpi\\plus.png"
-    },
-    {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_registration_page.xml.flat",
@@ -64,6 +44,42 @@
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_choose_house.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\activity_choose_house.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_input.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\input.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_plus.png.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-xhdpi\\plus.png"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_grocerylistapp.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\grocerylistapp.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_plus.png.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-hdpi\\plus.png"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -78,14 +94,6 @@
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_plus.png.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-mdpi\\plus.png"
-    },
-    {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_input.xml.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\input.xml"
-    },
-    {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_plus.png.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-xhdpi\\plus.png"
     },
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_plus.xml.flat",

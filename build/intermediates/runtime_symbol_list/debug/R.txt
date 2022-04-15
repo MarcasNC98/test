@@ -2892,6 +2892,10 @@ int id off 0x7f08013e
 int id on 0x7f08013f
 int id onInterceptTouchReturnSwipe 0x7f080140
 int id outline 0x7f080141
+int id outputAmount 0x7f0801fc
+int id outputDate 0x7f0801fd
+int id outputPrice 0x7f0801fe
+int id outputText 0x7f0801ff
 int id outward 0x7f080142
 int id overshoot 0x7f080143
 int id packed 0x7f080144
@@ -2916,6 +2920,7 @@ int id rectangles 0x7f080156
 int id register 0x7f0801f7
 int id registerBtn 0x7f0801f8
 int id register_email 0x7f0801f9
+int id register_name 0x7f080201
 int id register_password 0x7f0801fa
 int id register_signIn 0x7f0801fb
 int id reverseSawtooth 0x7f080157
@@ -3147,6 +3152,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_choose_house 0x7f0b0084
 int layout activity_main 0x7f0b001c
 int layout activity_registration_page 0x7f0b0081
 int layout browser_actions_context_menu_page 0x7f0b0075
@@ -3168,6 +3174,7 @@ int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout grocerylistapp 0x7f0b0082
+int layout info_output 0x7f0b0083
 int layout input 0x7f0b0074
 int layout m3_alert_dialog 0x7f0b002d
 int layout m3_alert_dialog_actions 0x7f0b002e

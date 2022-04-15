@@ -9,6 +9,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <!--Aligns the sign in form so that inputs are stacked on top of each other-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,20 +54,17 @@
             android:gravity="center"
             android:id="@+id/register" />
 
+
         <!--Button that when clicked will sign the user in and redirect them to the apps home screen-->
-        <Button
-            android:id="@+id/loginBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Log In"
-            android:textAppearance="?android:textAppearanceMedium" />
     </LinearLayout>
 
-
-
-
-
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Log In"
+        android:textAppearance="?android:textAppearanceMedium" />
 
 
 </LinearLayout>

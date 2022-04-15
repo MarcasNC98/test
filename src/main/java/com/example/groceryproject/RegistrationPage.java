@@ -18,6 +18,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationPage extends AppCompatActivity {
 
@@ -34,6 +37,10 @@ public class RegistrationPage extends AppCompatActivity {
     //ProgressDialog class called newDialog
     private ProgressDialog newDialog;
 
+    private DatabaseReference newDatabase;
+
+    private EditText userName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +48,9 @@ public class RegistrationPage extends AppCompatActivity {
 
         //Returns an instance of FirebaseAuth and ties it to newAuth
         newAuth=FirebaseAuth.getInstance();
+
+        userName=findViewById(R.id.register_name);
+
         //Assigns the input field for an email address with the ID 'register_email' from 'activity_registration.xml' to emailAddress
         emailAddress=findViewById(R.id.register_email);
         //Assigns the input field for creating a password with the ID 'register_password' from 'activity_registration.xml' to password
@@ -49,6 +59,14 @@ public class RegistrationPage extends AppCompatActivity {
         email_signIn=findViewById(R.id.register_signIn);
         //Assigns the button for creating an account with the ID 'registerBtn' from 'activity_registration.xml' to buttonRegister
         buttonRegister=findViewById(R.id.registerBtn);
+
+
+        //Returns an instance of FirebaseAuth and ties it to newAuth
+        newAuth=FirebaseAuth.getInstance();
+        //Creates a FirebaseUser class called newUser and ties it to newAuth.getCurrentUser that will retrieve the current users credentials
+        FirebaseUser newUser=newAuth.getCurrentUser();
+
+        newDatabase= FirebaseDatabase.getInstance("https://grocerylist-c678c-default-rtdb.europe-west1.firebasedatabase.app/").getReference().child("NewUsers");
 
         //Creates and sets a new instance of ProgressDialog and assigns it to newDialog, this will display a progress messaging letting the user know the program is working on registering an account
         newDialog=new ProgressDialog(this);
@@ -67,8 +85,17 @@ public class RegistrationPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //When clicked, a string called newEmail and newPassword will be created that will get the text in the emailAddress and password fields, convert them to strings and will use trim to remove any spaces at the beginning or end of the inputted data
+                String name=userName.getText().toString().trim();
                 String newEmail=emailAddress.getText().toString().trim();
                 String newPassword=password.getText().toString().trim();
+
+
+                //If the newEmail field is empty, an error will be shown in the emailAddress field stating that the field cannot be blank
+                if (TextUtils.isEmpty(name)){
+                    userName.setError("Cannot be blank");
+                    return;
+                }
+
 
                 //If the newEmail field is empty, an error will be shown in the emailAddress field stating that the field cannot be blank
                 if (TextUtils.isEmpty(newEmail)){
@@ -92,6 +119,11 @@ public class RegistrationPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //If the task is successful, a new activity is started that will get the HomePage class and redirect the user to the apps home page
                         if (task.isSuccessful()){
+                            //Creates a string called uId and ties it to newUser.getUid that will retrieve the users generated ID.
+                            String uId=newUser.getUid();
+
+                            newDatabase.child(uId).child("Name").setValue(name);
+
                             startActivity(new Intent(getApplicationContext(),HomePage.class));
                             //A toast dialog message will pop up on the screen informing the user that their account has been created successfully
                             Toast.makeText(getApplicationContext(),"Account created",Toast.LENGTH_SHORT).show();

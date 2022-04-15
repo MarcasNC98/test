@@ -52,10 +52,13 @@
 
                 <!--Editable text field for the user to input an items name-->
                 <EditText
+                    android:id="@+id/input_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:id="@+id/input_text" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -73,9 +76,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="Amount:"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:layout_margin="10dp" />
+                    android:textAppearance="?android:textAppearanceMedium" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -84,10 +90,13 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/input_amount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:id="@+id/input_amount" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -115,10 +124,13 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/input_price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:id="@+id/input_price" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
             </RelativeLayout>
         </LinearLayout>
 
