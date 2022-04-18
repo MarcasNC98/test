@@ -47,7 +47,8 @@ public class HomePage extends AppCompatActivity {
     //FloatingActionButton class called fab_btn
     private FloatingActionButton fab_btn;
     //DatabaseReference class called newDatabase
-    private DatabaseReference newDatabase;
+    private FirebaseDatabase newDatabase;
+    private DatabaseReference newReference;
     //FirebaseAuth class called newAuth
     private FirebaseAuth newAuth;
     RecyclerView recyclerView;
@@ -75,17 +76,29 @@ public class HomePage extends AppCompatActivity {
         //Creates a string called uId and ties it to newUser.getUid that will retrieve the users generated ID.
         String uId=newUser.getUid();
         //Returns an instance of FirebaseDatabase, references the child node "Grocery List" and the user ID in this node and assigns it to newDatabase
-        newDatabase= FirebaseDatabase.getInstance("https://grocerylist-c678c-default-rtdb.europe-west1.firebasedatabase.app/").getReference().child("Grocery List");
+        newDatabase= FirebaseDatabase.getInstance("https://grocerylist-c678c-default-rtdb.europe-west1.firebasedatabase.app/");
+        newReference=newDatabase.getReference();
+
         //Assigns the Floating Action Button with the id of 'fab' from 'grocerylistapp.xml to fab_btn
         fab_btn=findViewById(R.id.fab);
 
-            newDatabase.addValueEventListener(new ValueEventListener() {
+            newReference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     list.clear();
-                    for(DataSnapshot dataSnapshot:snapshot.getChildren()){
-                        Info info = dataSnapshot.getValue(Info.class);
-                        list.add(info);
+                    for(DataSnapshot dataSnapshot:snapshot.child("Homes").getChildren()){
+
+                        //Info info = dataSnapshot.getValue(Info.class);
+                        //list.add(info);
+
+
+                        System.out.println("TEST11111111111111122222222222222222"+dataSnapshot.getValue());
+                        for(DataSnapshot secondSnapshot : snapshot.child("Homes").child(dataSnapshot.getKey()).child("groceryList").getChildren()){
+                            System.out.println("TEST111111111111111"+secondSnapshot.getValue());
+                            Info info = secondSnapshot.getValue(Info.class);
+                            list.add(info);
+
+                        }
                     }
                     adapter.notifyDataSetChanged();
                 }
@@ -160,7 +173,7 @@ public class HomePage extends AppCompatActivity {
                 }
 
                 //String called id that pushes a key to the Firebase database
-                String id=newDatabase.push().getKey();
+                String id=newReference.push().getKey();
 
 
                 //Sends the date that the data was pushed
@@ -169,8 +182,30 @@ public class HomePage extends AppCompatActivity {
                 //Ties the info entered in the input dialog box to the variables in info.java
                 Info info=new Info(newDate, newText,conAmount,conPrice,id);
 
+
+                //Returns an instance of FirebaseAuth and ties it to newAuth
+                newAuth=FirebaseAuth.getInstance();
+                //Creates a FirebaseUser class called newUser and ties it to newAuth.getCurrentUser that will retrieve the current users credentials
+                FirebaseUser newUser=newAuth.getCurrentUser();
+                //Creates a string called uId and ties it to newUser.getUid that will retrieve the users generated ID.
+                String uId=newUser.getUid();
+
+                final String[] homeID = new String[1];
+
+                newReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        homeID[0] =snapshot.child("NewUsers").child(uId).child("home").getValue(String.class);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
                 //Sets the values in info to the id that is pushed to the database
-                newDatabase.child(id).setValue(info)
+                newReference.child("Homes").child(homeID[0]).child("groceryList").child(id).setValue(info)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {

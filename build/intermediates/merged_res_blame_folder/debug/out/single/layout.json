@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\info_output.xml",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\info_output.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_choose_house.xml",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\activity_choose_house.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\grocerylistapp.xml",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\grocerylistapp.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\input.xml",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\input.xml"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_registration_page.xml",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\activity_registration_page.xml"
+    }
+]

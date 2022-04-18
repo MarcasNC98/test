@@ -43,8 +43,10 @@ public class ChooseHouseActivity extends AppCompatActivity {
 
     private Button createButton;
     private Button joinButton;
-    private DatabaseReference newDatabase;
+    private FirebaseDatabase newDatabase;
+    private DatabaseReference newReference;
     String houseID;
+    private FirebaseAuth newAuth;
 
 
 
@@ -55,14 +57,22 @@ public class ChooseHouseActivity extends AppCompatActivity {
 
         createButton=findViewById(R.id.createHouse);
         joinButton=findViewById(R.id.joinHouse);
-        newDatabase= FirebaseDatabase.getInstance("https://grocerylist-c678c-default-rtdb.europe-west1.firebasedatabase.app/").getReference().child("Homes/houseID");
+        newDatabase= FirebaseDatabase.getInstance("https://grocerylist-c678c-default-rtdb.europe-west1.firebasedatabase.app/");
+        newReference= newDatabase.getReference();
+        //Returns an instance of FirebaseAuth and ties it to newAuth
+        newAuth=FirebaseAuth.getInstance();
+        //Creates a FirebaseUser class called newUser and ties it to newAuth.getCurrentUser that will retrieve the current users credentials
+        FirebaseUser newUser=newAuth.getCurrentUser();
 
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             //When clicked, the dialogBox view will be shown
             public void onClick(View view) {
-                houseID=newDatabase.push().getKey();
-                newDatabase.child(houseID).setValue("houseID");
+                houseID=newReference.push().getKey();
+                newReference.child("Homes").child(houseID).child("blank").setValue("");
+
+                String uId=newUser.getUid();
+                newReference.child("NewUsers").child(uId).child("home").setValue(houseID);
             }
         });
 

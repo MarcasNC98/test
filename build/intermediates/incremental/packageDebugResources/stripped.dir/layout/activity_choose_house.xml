@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ChooseHouseActivity">
+
+
+    <!--Aligns the sign in form so that inputs are stacked on top of each other-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Text view informing user they're on the sign in screen-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to House Share"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black" />
+
+
+
+        <!--Button that when clicked will sign the user in and redirect them to the apps home screen-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createHouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Create House Group"
+        android:textAppearance="?android:textAppearanceMedium" />
+    <Button
+        android:id="@+id/joinHouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Join House Group"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+</LinearLayout>
