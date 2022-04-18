@@ -10,10 +10,12 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable plus
+id createHouse
 id fab
 id input_amount
 id input_price
 id input_text
+id joinHouse
 id loginBtn
 id login_email
 id login_password

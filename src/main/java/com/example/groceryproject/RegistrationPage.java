@@ -124,7 +124,7 @@ public class RegistrationPage extends AppCompatActivity {
 
                             newDatabase.child(uId).child("Name").setValue(name);
 
-                            startActivity(new Intent(getApplicationContext(),HomePage.class));
+                            startActivity(new Intent(getApplicationContext(),ChooseHouseActivity.class));
                             //A toast dialog message will pop up on the screen informing the user that their account has been created successfully
                             Toast.makeText(getApplicationContext(),"Account created",Toast.LENGTH_SHORT).show();
 

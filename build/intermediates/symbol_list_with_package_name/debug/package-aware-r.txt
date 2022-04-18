@@ -2700,6 +2700,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id createHouse
 id currentState
 id custom
 id customPanel
@@ -2797,6 +2798,7 @@ id item2
 id item3
 id item4
 id item_touch_helper_previous_elevation
+id joinHouse
 id jumpToEnd
 id jumpToStart
 id labeled

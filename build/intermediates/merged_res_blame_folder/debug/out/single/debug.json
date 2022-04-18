@@ -12,20 +12,20 @@
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_info_output.xml.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\info_output.xml"
-    },
-    {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_info_output.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\layout\\info_output.xml"
     },
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_plus.png.flat",
         "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\drawable-xxhdpi\\plus.png"
+    },
+    {
+        "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\cummi\\AndroidStudioProjects\\GroceryProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_registration_page.xml.flat",
